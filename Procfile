@@ -1,1 +1,1 @@
-worker: ruby RandomMovieBot1.rb
+worker: ruby ./bin/RandomMovieBot1.rb
