@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require_relative '../lib/helper_methods'
+require_relative '../lib/request_movie_handler'
 include HelperMethods
+include RequestMovieHandler
 require 'rubygems'
 require 'chatterbot/dsl'
 
@@ -9,13 +11,21 @@ no_update
 verbose
 exclude bad_words
 
-
 # replies do |tweet|
 #    tweet.text = "Test tweet text"
 #    p tweet.text
 # end
 
-tweet_split = HelperMethods.split_tweet("I want to see comedy")
-p tweet_split
+tweet_split = split_tweet("I want to see ")
+get_genre(tweet_split)
+unless check_movie
+   puts "Sorry, but that is not a valid genre"
+else
+   movie = check_movie
+   movie_id = movie[0]
+   movie_title =movie[1]
+   puts "#{movie_title} https://www.themoviedb.org/movie/#{movie_id}"
+end
+
 
 
