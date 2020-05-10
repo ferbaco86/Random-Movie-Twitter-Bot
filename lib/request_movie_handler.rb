@@ -10,11 +10,6 @@ module RequestMovieHandler
   @@genres_arr = []
   
   def check_movie
-    # puts ''
-    # p @@genres_arr
-    # puts ''
-    # p @@genre_selected
-    # puts ''
     if @@genres_arr.include?(@@genre_selected[0])
       get_random_movie
     else
