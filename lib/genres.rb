@@ -21,10 +21,10 @@ class Genres
     genre_selection = Tmdb::Genre.find(@genre_selected[0])
     page_number = rand(1..genre_selection.total_pages)
     movie_list_arr = if page_number == 1
-                   genre_selection
-                 else
-                   genre_selection.get_page(page_number)
-                 end
+                       genre_selection
+                     else
+                       genre_selection.get_page(page_number)
+                     end
     movie_list_arr.results
   end
 

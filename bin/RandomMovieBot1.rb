@@ -16,7 +16,6 @@ replies do |tweet|
   tweet_split = split_tweet(tweet.text)
   genres = Genres.new(tweet_split)
   genres.genre
-
   if genres.genre_selected?
     movies = Movies.new(genres.movie_list)
     movie_title = movies.title
@@ -24,5 +23,5 @@ replies do |tweet|
     reply "#{user} #{movie_title} https://www.themoviedb.org/movie/#{movie_id}", tweet
   else
     reply "#{user} Sorry, but that is not a valid genre", tweet
-   end
+  end
 end
