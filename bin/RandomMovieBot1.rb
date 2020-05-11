@@ -7,7 +7,7 @@ include HelperMethods
 require 'rubygems'
 require 'chatterbot/dsl'
 
-debug_mode
+#debug_mode
 #no_update
 verbose
 exclude bad_words
