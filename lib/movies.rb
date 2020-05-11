@@ -1,8 +1,6 @@
 class Movies
   require 'themoviedb'
   require 'dotenv/load'
-  
- 
 
   Tmdb::Api.key(ENV['TMBD_KEY'])
 
@@ -12,19 +10,14 @@ class Movies
     selected_movie_info = @movie_list.sample
     @movie_info << selected_movie_info['id']
     @movie_info << selected_movie_info['title']
-    @movie_info
   end
-  
-  #def get_random_movie
-  
-  #end
 
-  def get_title
+  def title
     title = @movie_info[1]
     title
   end
 
-  def get_id
+  def id
     id = @movie_info[0]
     id
   end
