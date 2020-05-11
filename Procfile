@@ -1,1 +1,0 @@
-worker: ruby ./bin/RandomMovieBot1.rb
