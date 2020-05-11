@@ -1,9 +1,9 @@
 class Genres
   require 'themoviedb'
-  require_relative '../config/tmdb_api_key'
-  include TMBDApiKey
+  require 'dotenv/load'
+  
 
-  TMBDApiKey::KEY
+  Tmdb::Api.key(ENV['TMBD_KEY'])
   
 
   def initialize(words_array)
