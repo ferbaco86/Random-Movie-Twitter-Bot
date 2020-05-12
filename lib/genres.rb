@@ -15,7 +15,7 @@ class Genres
   def genre
     @genre_list.each { |item| @genres_arr << item['name'] }
     @genre_selected = @words_array & @genres_arr
-    p @genres_arr
+    @genres_arr
     @genre_selected
   end
 

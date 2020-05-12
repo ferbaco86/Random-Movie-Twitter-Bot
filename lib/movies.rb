@@ -4,6 +4,8 @@ class Movies
 
   Tmdb::Api.key(ENV['TMBD_KEY'])
 
+  attr_reader :movie_info
+
   def initialize(movie_list)
     @movie_list = movie_list
     @movie_info = []
