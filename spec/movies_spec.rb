@@ -8,14 +8,12 @@ describe Movies do
   describe '#title' do
     it 'Returns the title of the selected movie' do
       genres.genre
-      genres.page_number = 1
       expect(movies.movie_info).to include(movies.title)
     end
   end
   describe 'id' do
     it 'Returns the id of the selected movie' do
       genres.genre
-      genres.page_number = 1
       expect(movies.movie_info).to include(movies.id)
     end
   end
