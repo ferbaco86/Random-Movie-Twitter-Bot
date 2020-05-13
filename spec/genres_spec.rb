@@ -1,4 +1,4 @@
-require './lib/genres.rb'
+require_relative '../lib/genres.rb'
 
 describe Genres do
   let(:genres) { Genres.new(%w[I Want To Watch A Comedy]) }

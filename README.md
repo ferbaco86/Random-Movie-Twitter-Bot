@@ -80,10 +80,35 @@ for example you can tweet ```@RandomMovieBot1 I want to watch an action movie```
 
 ![screenshot](./assets/screenshot2.png)
 
+### RSpec Testing
+
+The code can be tested using RSpec. To run the tests first make sure you have RSpec installed on your local machine. To verify it open your terminal and type:
+
+```rspec --version```
+
+If it is not installed, you can do it running the following command:
+
+```gem install rspec```
+
+To run the tests, navigate to the root file of the project and run:
+
+```rspec```
+
+ The tests output should be like this:
+
+![screenshot](images/screenshot3.png)
+
+If you prefer to run your own tests, feel free to modify these files from the ```./spec``` folder, according to your criteria:
+
+```genres_spec.rb
+   helper_methods_spec.rb
+   movies_spec.rb
+```
+
 
 ### Deployment
 
-For further testing purposes, this bot could be deployed in a server using Heroku
+For further testing purposes, this bot could be deployed in a server using Heroku.
 
 ## Author
 

@@ -1,4 +1,4 @@
-require './lib/helper_methods.rb'
+require_relative '../lib/helper_methods.rb'
 
 describe HelperMethods do
   include HelperMethods
