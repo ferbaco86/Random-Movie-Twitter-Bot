@@ -42,8 +42,9 @@ To deploy a fully functional local copy, you must install the following dependen
 
  See the details below to modify and include all your personal  keys and values in the .yml and .env files
  
- 
-## Adding TMDB Key 
+## Adding Keys
+
+### TMDB Key 
 
 - Inside the ```.env``` file on the root of your project and add your own TMDB API key. You can request one here (https://www.themoviedb.org/documentation/api)
 
@@ -53,7 +54,7 @@ export TMBD_KEY = WRITE YOUR TMBD API KEY HERE
 
 ```
 
-### Add Twitter keys
+### Twitter keys
 
 - At the ```.RandomMovieBot1.yml``` file, located in the bin folder you have to add your own twitter development consumer/access key/secret/tokens from your twitter developer account.
 
@@ -68,7 +69,7 @@ You can request one here:
 :access_token_secret: --WRITE YOUR TWITTER ACCESS_TOKEN_SECRET HERE--
 ```
 
-### Usage
+## Usage
 - To start using the program, go to any twitter account and tweet ```@RandomMovieBot1 -- text asking for a movie of X genre --```
 for example you can tweet ```@RandomMovieBot1 I want to watch an action movie```
 - Then using your terminal navigate to your project folder and execute the bot with the ```./bin/RandomMovieBot1.rb``` command
@@ -80,7 +81,7 @@ for example you can tweet ```@RandomMovieBot1 I want to watch an action movie```
 
 ![screenshot](./assets/screenshot2.png)
 
-### RSpec Testing
+## RSpec Testing
 
 The code can be tested using RSpec. To run the tests first make sure you have RSpec installed on your local machine. To verify it open your terminal and type:
 
@@ -106,7 +107,7 @@ If you prefer to run your own tests, feel free to modify these files from the ``
 ```
 
 
-### Deployment
+## Deployment
 
 For further testing purposes, this bot could be deployed in a server using Heroku.
 
