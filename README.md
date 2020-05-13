@@ -96,7 +96,7 @@ To run the tests, navigate to the root file of the project and run:
 
  The tests output should be like this:
 
-![screenshot](images/screenshot3.png)
+![screenshot](./assets/screenshot3.png)
 
 If you prefer to run your own tests, feel free to modify these files from the ```./spec``` folder, according to your criteria:
 
