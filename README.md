@@ -10,8 +10,8 @@ A Twitter bot that recommends a movie based on the genre that the user tweets
 - When locally executed, the program checks if the user twitter handler has been mentioned and checks the user's reply_id to see if this tweet has been already answered.
 - Reads the tweet text and run the helper and genres method to check if there is mention to any valid movie genres, contained in The Movie Database.
 - If the tweet text contained a valid genre, the bot searches the Movie Database for a random page of the requested genre and selects a random movie from the page.
-- The bot then gets the title and the id of the selected movie.
-- Finally the title movie and the link with the correspondent id is replied to the user. 
+- The bot then gets the title and the ID of the selected movie.
+- Finally the title movie and the link with the correspondent ID is replied to the user. 
 
 ## Built With
 
