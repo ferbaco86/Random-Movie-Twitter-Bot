@@ -46,7 +46,7 @@ To deploy a fully functional local copy, you must install the following dependen
 
 ### TMDB Key 
 
-- Inside the ```.env``` file on the root of your project and add your own TMDB API key. You can request one here (https://www.themoviedb.org/documentation/api)
+- Inside the ```.env``` file on the root of your project add your own TMDB API key. You can request one here [TMDB API](https://www.themoviedb.org/documentation/api)
 
 ```ruby
 
